@@ -1,0 +1,173 @@
+/* Basic Styles */
+.line-heading {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color:  rgb(241, 41, 108);
+    font-size: 25px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.line-heading::before,
+.line-heading::after {
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid #ccc;
+    margin: 0 10px;
+}
+
+
+
+.box {
+    width: 500px;
+    height: 60px;
+    margin: 30px 350px;
+    transition: height 0.3s ease;
+    cursor: pointer;
+    border: 2px solid rgba(137, 133, 133, 0.337);
+    position: relative;
+    padding: 20px;
+    font-weight: bold;
+   padding-top: 30px;
+}
+
+.box.expanded {
+    height: 150px; /* Adjust as needed */
+    background-color: rgba(229, 162, 184, 0.141);
+    border: 2px solid  rgb(241, 41, 108);
+}
+
+/* Styling for box content */
+.box-content {
+    position: relative;
+}
+
+/* Position price and discount labels */
+.price-label, .discount-label {
+    position: absolute;
+    top: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+.price-label {
+    right: 10px;
+}
+.original-price {
+    position: absolute;
+    top: 35px; /* Adjust as needed to position below the price label */
+    right: 20px;
+    color: #888; /* Lighter color to indicate original price */
+    font-size: 14px; /* Slightly smaller font */
+    text-decoration: line-through; /* Strikethrough effect */
+    font-style: italic; /* Different font style */
+}
+.standard-price {
+    display: block;
+    margin-top: 5px;
+    margin-left: 25px;
+    font-size: 14px;
+    color: #555;
+    font-weight: bold;
+}
+
+.most-popular {
+    position: absolute;
+    top: -15px;
+    left: 430px;
+    background-color: rgb(241, 41, 108);
+    color: white;
+    font-size: 12px;
+    padding: 3px 16px;
+    border-radius: 3px;
+    font-weight: bold;
+}
+.discount-label {
+    right: 350px;
+    color: white;
+    background-color: rgb(241, 41, 108);
+}
+
+/* Size and color labels on one line */
+.option-labels {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.option-labels label {
+    font-weight: bold;
+    color: #333;
+    width: 48%;
+}
+
+/* Styling for dropdowns and additional input boxes */
+.option-inputs {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.second-option-inputs {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.option-inputs,
+.second-option-inputs,
+.option-labels {
+   display: none; /* Initially hidden */
+}
+
+.option-inputs select,
+.option-inputs input[type="text"] {
+    width: 48%;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    
+}
+
+.second-option-inputs select,
+.second-option-inputs input[type="text"] {
+    width: 48%;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    
+}
+
+.button{
+    margin: 30px 350px;
+    width: 550px;
+    height: 50px;
+    font-size: larger;
+    color: white;
+    border: none;
+    border: 5px;
+    background-color:  rgb(241, 41, 108);
+    align-items: center;
+    cursor: pointer;
+}
+.button::after {
+    content: "@Powered by Pumper";
+    position: absolute;
+    bottom: -85px; /* Adjust as needed */
+    left: 65%;
+    transform: translateX(-50%);
+    font-size: 15px;
+    color: rgba(134, 127, 127, 0.6); /* Slightly transparent */
+    pointer-events: none;
+}
+.delivery-label{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+    width: 43%;
+    margin-left: 350px;
+}

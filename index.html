@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Boxes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="line-heading">
+        <span style="margin-left: 20px; margin-right: 20px;">YAY! it's BOGO</span>
+    </div>
+    
+    <div class="box" id="box-top">
+        <div class="box-content">
+            <label><input type="radio" name="pair" value="1" data-box="top"> 1 Pair</label>
+            <div class="price-label">$10.00 USD</div>
+            <div class="original-price">$24.00 USD</div>
+            <div class="discount-label">50% OFF</div>
+            <div class="standard-price">Standard Price</div>
+        </div>
+        <div class="option-labels">
+            <label for="size-top">Size:</label>
+            <label for="color-top">Color:</label>
+        </div>
+        <div class="option-inputs">
+            <select id="size-top" name="size">
+                <option value="" disabled selected>Select Size</option>
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+            </select>
+            <select id="color-top" name="color">
+                <option value="" disabled selected>Select Color</option>
+                <option value="red">Red</option>
+                <option value="blue">Blue</option>
+                <option value="green">Green</option>
+            </select>
+        </div>
+        <div class="second-option-inputs">
+            <select id="size-top" name="size">
+                <option value="" disabled selected>Select Size</option>
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+            </select>
+            <select id="color-top" name="color">
+                <option value="" disabled selected>Select Color</option>
+                <option value="red">Red</option>
+                <option value="blue">Blue</option>
+                <option value="green">Green</option>
+            </select>
+        </div>
+    </div>
+    
+    <div class="box" id="box-middle">
+        <div class="most-popular">Most Popular</div>
+        <div class="box-content">
+            <label><input type="radio" name="pair" value="2" data-box="middle"> 2 Pair</label>
+            <div class="price-label">$18.00 USD</div>
+            <div class="original-price">$24.00 USD</div>
+            <div class="discount-label">20% OFF</div>
+        </div>
+        <div class="option-labels">
+            <label for="size-middle">Size:</label>
+            <label for="color-middle">Color:</label>
+        </div>
+        <div class="option-inputs">
+            <select id="size-middle" name="size">
+                <option value="" disabled selected>Select Size</option>
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+            </select>
+            <select id="color-middle" name="color">
+                <option value="" disabled selected>Select Color</option>
+                <option value="red">Red</option>
+                <option value="blue">Blue</option>
+                <option value="green">Green</option>
+            </select>
+        </div>
+        <div class="second-option-inputs">
+            <select id="size-middle" name="size">
+                <option value="" disabled selected>Select Size</option>
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+            </select>
+            <select id="color-middle" name="color">
+                <option value="" disabled selected>Select Color</option>
+                <option value="red">Red</option>
+                <option value="blue">Blue</option>
+                <option value="green">Green</option>
+            </select>
+        </div>
+    </div>
+    
+    <div class="box" id="box-bottom">
+        <div class="box-content">
+            <label><input type="radio" name="pair" value="3" data-box="bottom"> 3 Pair</label>
+            <div class="price-label">$24.00 USD</div>
+            <div class="original-price">$24.00 USD</div>
+            <div class="discount-label">30% OFF</div>
+        </div>
+        <div class="option-labels">
+            <label for="size-bottom">Size:</label>
+            <label for="color-bottom">Color:</label>
+        </div>
+        <div class="option-inputs">
+            <select id="size-bottom" name="size">
+                <option value="" disabled selected>Select Size</option>
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+            </select>
+            <select id="color-bottom" name="color">
+                <option value="" disabled selected>Select Color</option>
+                <option value="red">Red</option>
+                <option value="blue">Blue</option>
+                <option value="green">Green</option>
+            </select>
+        </div>
+        <div class="second-option-inputs">
+            <select id="size-bottom" name="size">
+                <option value="" disabled selected>Select Size</option>
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+            </select>
+            <select id="color-bottom" name="color">
+                <option value="" disabled selected>Select Color</option>
+                <option value="red">Red</option>
+                <option value="blue">Blue</option>
+                <option value="green">Green</option>
+            </select>
+        </div>
+       
+    </div>
+    <div class="delivery-label">
+        <label for="delivery" style="color: rgb(241, 41, 108);">Free Delivery</label>
+        <label for="Total">Total : $10.00USD</label>
+    </div>
+    <button class="button">+ Add To Cart</button>
+    <script src="script.js"></script>
+</body>
+</html>
